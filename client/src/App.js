@@ -59,6 +59,7 @@ function App() {
     thingToDisplay = state.filteredEmps 
   }
 
+  console.log('this is our state', state)
   // RETURN ON THE PAGE
   return (
     <div className="App">
