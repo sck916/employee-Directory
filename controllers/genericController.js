@@ -1,4 +1,4 @@
-//  Connect to database db
+// Connect to database db
 // const db = require('../models');
 const db = 'hello';
 
