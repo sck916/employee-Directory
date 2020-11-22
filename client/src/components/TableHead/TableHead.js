@@ -7,10 +7,10 @@ function TableHead(props) {
       <div className="container card">
         <div className="row">
           <div className="col-sm">
-          <h3 onClick={()=>props.sortName()}>Name</h3>
+          <h3 onClick={()=>props.sortName('name')}>Name</h3>
           </div>
           <div className="col-sm">
-          <h3>Email</h3>
+          <h3 onClick={()=>props.sortName('email')}>Email</h3>
           </div>
           <div className="col-sm">
           <h3>Cell</h3>
