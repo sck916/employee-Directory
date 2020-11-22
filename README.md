@@ -30,7 +30,8 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 ![image](./client/public/directory.png) -->
 
 ## Technology
- Node, React, Github, CSS, HTML, Heroku etc.
+Node, React, Github, CSS, HTML, Heroku etc.
 
-## Additional Questions
-If you have any questions about the project, please reach out to Steve Kavuu through [GitHub](https://github.com/sck916) or [LinkedIn](https://www.linkedin.com/in/steve-kavuu-8a96611b7/)
+### Additional Questions
+Should you have any questions about the project, please reach out to me through
+[GitHub](https://github.com/sck916) or [LinkedIn](https://www.linkedin.com/in/steve-kavuu-8a96611b7/)
