@@ -33,4 +33,4 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 React, Github, Node, Heroku, HTML, CSS etc.
 
 ## Additional Questions
-If you have any questions about the project, please reach out to Jake Wagner through [GitHub](https://github.com/sck916) or [LinkedIn](https://www.linkedin.com/in/steve-kavuu-8a96611b7/)
+If you have any questions about the project, please reach out to Steve Kavuu through [GitHub](https://github.com/sck916) or [LinkedIn](https://www.linkedin.com/in/steve-kavuu-8a96611b7/)
