@@ -41,15 +41,26 @@ function App() {
   
     }, [])
 
-    const sortName = () => {
-      console.log('sort happening!!')
+    const sortName = (type) => {
+      console.log('sort happening!!',type)
 
       let sort
 
       if(state.asc === true) {
         console.log("do asc order");
+
+
+
+
         sort = state.emps.sort(function(a, b){
-          var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
+
+        
+          if(type === 'name') {
+           var nameA = a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
+          } else if( type === 'email') {
+           var nameA = a.email.toLowerCase(), nameB=b.email.toLowerCase();
+          }
+          //var nameA = a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
           if (nameA < nameB) //sort string ascending
            return -1;
           if (nameA > nameB)
@@ -60,15 +71,19 @@ function App() {
       } else {
         console.log("do dsc");
         sort = state.emps.sort(function(a, b){
-          var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
+
+          if(type === 'name') {
+            var nameA = a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
+           } else if( type === 'email') {
+            var nameA = a.email.toLowerCase(), nameB=b.email.toLowerCase();
+           }
+          //var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
           if (nameA > nameB) //sort string ascending
            return -1;
           if (nameA < nameB)
            return 1;
           return 0; //default return value (no sorting)
          });
-
-        
       }
 
       // const sort = state.emps.sort(function(a, b){
