@@ -10,7 +10,8 @@ function App() {
   // Defining the state  
   const [state, setState] = useState({
     emps: [],
-    filteredEmps: []
+    filteredEmps: [],
+    asc: true
   })
 
    // Function to handle the user input typing, grab the user input, and add to the newFilteredEmps array if there is a match from what the user input is and what is in our API database (all based on the name key)
@@ -41,15 +42,45 @@ function App() {
     }, [])
 
     const sortName = () => {
-      const sort = state.emps.sort(function(a, b){
-        var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
-        if (nameA < nameB) //sort string ascending
-         return -1;
-        if (nameA > nameB)
-         return 1;
-        return 0; //default return value (no sorting)
-       });
-       setState({...state, emps: sort})
+      console.log('sort happening!!')
+
+      let sort
+
+      if(state.asc === true) {
+        console.log("do asc order");
+        sort = state.emps.sort(function(a, b){
+          var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
+          if (nameA < nameB) //sort string ascending
+           return -1;
+          if (nameA > nameB)
+           return 1;
+          return 0; //default return value (no sorting)
+         });
+        
+      } else {
+        console.log("do dsc");
+        sort = state.emps.sort(function(a, b){
+          var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
+          if (nameA > nameB) //sort string ascending
+           return -1;
+          if (nameA < nameB)
+           return 1;
+          return 0; //default return value (no sorting)
+         });
+
+        
+      }
+
+      // const sort = state.emps.sort(function(a, b){
+      //   var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
+      //   if (nameA > nameB) //sort string ascending
+      //    return -1;
+      //   if (nameA < nameB)
+      //    return 1;
+      //   return 0; //default return value (no sorting)
+      //  });
+
+       setState({...state, emps: sort, asc: !state.asc})
     }
 
   // Creating variable to store "things to display" so we can change that state based on if there is user input in the search bar
