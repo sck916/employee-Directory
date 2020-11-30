@@ -5,7 +5,6 @@ EMPLOYEE DIRECTORY
 * User Story
 * Business Context
 * Demo Links
-<!-- * Screenshot -->
 * Technology
 * Additional Questions   
 
@@ -25,9 +24,6 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 [Heroku](https://young-basin-59453.herokuapp.com/)
 
 [Github](https://github.com/sck916/employee-Directory)
-
-<!-- ## Screenshot
-![image](./client/public/directory.png) -->
 
 ## Technology
 Node, React, Github, CSS, HTML, Heroku etc.
